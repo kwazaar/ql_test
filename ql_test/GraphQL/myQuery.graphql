@@ -1,0 +1,3 @@
+query WardsByIds {
+    wardsIds
+}
