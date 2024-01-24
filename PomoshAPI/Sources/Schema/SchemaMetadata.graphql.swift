@@ -23,6 +23,8 @@ public enum SchemaMetadata: ApolloAPI.SchemaMetadata {
   public static func objectType(forTypename typename: String) -> ApolloAPI.Object? {
     switch typename {
     case "Query": return PomoshAPI.Objects.Query
+    case "WardsConnection": return PomoshAPI.Objects.WardsConnection
+    case "WardsEdge": return PomoshAPI.Objects.WardsEdge
     case "Ward": return PomoshAPI.Objects.Ward
     case "WardPublicInformation": return PomoshAPI.Objects.WardPublicInformation
     case "Nomen": return PomoshAPI.Objects.Nomen

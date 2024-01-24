@@ -1,0 +1,18 @@
+query WardsList {
+    wards {
+        edges {
+            node {
+                id
+                publicInformation {
+                    name {
+                        displayName
+                    }
+                    photo {
+                        url(asAttachment: false)
+                        id
+                    }
+                }
+            }
+        }
+    }
+}

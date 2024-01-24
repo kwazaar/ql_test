@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD6B23A52B5EFA0B006C3256 /* ql_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B23A42B5EFA0B006C3256 /* ql_testApp.swift */; };
-		FD6B23A72B5EFA0B006C3256 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B23A62B5EFA0B006C3256 /* ContentView.swift */; };
+		FD6B23A72B5EFA0B006C3256 /* WardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B23A62B5EFA0B006C3256 /* WardsListView.swift */; };
 		FD6B23A92B5EFA0D006C3256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6B23A82B5EFA0D006C3256 /* Assets.xcassets */; };
 		FD6B23AC2B5EFA0D006C3256 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6B23AB2B5EFA0D006C3256 /* Preview Assets.xcassets */; };
 		FD6B23B42B5EFA42006C3256 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23B32B5EFA42006C3256 /* Apollo */; };
@@ -23,19 +23,23 @@
 		FD6B23C92B5EFC72006C3256 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23C82B5EFC72006C3256 /* ApolloSQLite */; };
 		FD6B23CB2B5EFC72006C3256 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23CA2B5EFC72006C3256 /* ApolloTestSupport */; };
 		FD6B23CE2B5EFD40006C3256 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B23CD2B5EFD40006C3256 /* NetworkService.swift */; };
-		FD6B23D02B5EFE1A006C3256 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B23CF2B5EFE1A006C3256 /* ViewModel.swift */; };
-		FD6B23D82B5F1634006C3256 /* PomoshAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23D72B5F1634006C3256 /* PomoshAPI */; };
+		FD6B23D02B5EFE1A006C3256 /* WardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B23CF2B5EFE1A006C3256 /* WardsListViewModel.swift */; };
+		FD6E29F22B6180C200A9BADD /* PomoshAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FD6E29F12B6180C200A9BADD /* PomoshAPI */; };
+		FD6E29F52B6191AF00A9BADD /* WardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6E29F42B6191AF00A9BADD /* WardsModel.swift */; };
+		FD6E29F72B6193D300A9BADD /* ImageChachingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6E29F62B6193D300A9BADD /* ImageChachingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD6B23A12B5EFA0B006C3256 /* ql_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ql_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6B23A42B5EFA0B006C3256 /* ql_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ql_testApp.swift; sourceTree = "<group>"; };
-		FD6B23A62B5EFA0B006C3256 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD6B23A62B5EFA0B006C3256 /* WardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardsListView.swift; sourceTree = "<group>"; };
 		FD6B23A82B5EFA0D006C3256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD6B23AB2B5EFA0D006C3256 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD6B23BD2B5EFB94006C3256 /* GraphQL */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GraphQL; sourceTree = "<group>"; };
 		FD6B23CD2B5EFD40006C3256 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		FD6B23CF2B5EFE1A006C3256 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FD6B23CF2B5EFE1A006C3256 /* WardsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardsListViewModel.swift; sourceTree = "<group>"; };
+		FD6E29F42B6191AF00A9BADD /* WardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardsModel.swift; sourceTree = "<group>"; };
+		FD6E29F62B6193D300A9BADD /* ImageChachingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChachingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,7 @@
 				FD6B23C92B5EFC72006C3256 /* ApolloSQLite in Frameworks */,
 				FD6B23B62B5EFA42006C3256 /* Apollo-Dynamic in Frameworks */,
 				FD6B23C52B5EFC72006C3256 /* Apollo-Dynamic in Frameworks */,
-				FD6B23D82B5F1634006C3256 /* PomoshAPI in Frameworks */,
+				FD6E29F22B6180C200A9BADD /* PomoshAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,13 +84,14 @@
 		FD6B23A32B5EFA0B006C3256 /* ql_test */ = {
 			isa = PBXGroup;
 			children = (
+				FD6E29F32B6191A300A9BADD /* Model */,
+				FD6E29EF2B617FD900A9BADD /* ViewModel */,
+				FD6E29EE2B617FD400A9BADD /* View */,
+				FD6E29ED2B617FB600A9BADD /* Service */,
 				FD6B23BD2B5EFB94006C3256 /* GraphQL */,
 				FD6B23A42B5EFA0B006C3256 /* ql_testApp.swift */,
-				FD6B23A62B5EFA0B006C3256 /* ContentView.swift */,
 				FD6B23A82B5EFA0D006C3256 /* Assets.xcassets */,
 				FD6B23AA2B5EFA0D006C3256 /* Preview Content */,
-				FD6B23CD2B5EFD40006C3256 /* NetworkService.swift */,
-				FD6B23CF2B5EFE1A006C3256 /* ViewModel.swift */,
 			);
 			path = ql_test;
 			sourceTree = "<group>";
@@ -104,6 +109,39 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD6E29ED2B617FB600A9BADD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FD6B23CD2B5EFD40006C3256 /* NetworkService.swift */,
+				FD6E29F62B6193D300A9BADD /* ImageChachingService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FD6E29EE2B617FD400A9BADD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD6B23A62B5EFA0B006C3256 /* WardsListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD6E29EF2B617FD900A9BADD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD6B23CF2B5EFE1A006C3256 /* WardsListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FD6E29F32B6191A300A9BADD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD6E29F42B6191AF00A9BADD /* WardsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +171,7 @@
 				FD6B23C62B5EFC72006C3256 /* ApolloAPI */,
 				FD6B23C82B5EFC72006C3256 /* ApolloSQLite */,
 				FD6B23CA2B5EFC72006C3256 /* ApolloTestSupport */,
-				FD6B23D72B5F1634006C3256 /* PomoshAPI */,
+				FD6E29F12B6180C200A9BADD /* PomoshAPI */,
 			);
 			productName = ql_test;
 			productReference = FD6B23A12B5EFA0B006C3256 /* ql_test.app */;
@@ -165,7 +203,7 @@
 			mainGroup = FD6B23982B5EFA0B006C3256;
 			packageReferences = (
 				FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */,
-				FD6B23D62B5F1634006C3256 /* XCLocalSwiftPackageReference "PomoshAPI" */,
+				FD6E29F02B6180C200A9BADD /* XCLocalSwiftPackageReference "PomoshAPI" */,
 			);
 			productRefGroup = FD6B23A22B5EFA0B006C3256 /* Products */;
 			projectDirPath = "";
@@ -194,9 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD6B23A72B5EFA0B006C3256 /* ContentView.swift in Sources */,
+				FD6E29F72B6193D300A9BADD /* ImageChachingService.swift in Sources */,
+				FD6B23A72B5EFA0B006C3256 /* WardsListView.swift in Sources */,
 				FD6B23CE2B5EFD40006C3256 /* NetworkService.swift in Sources */,
-				FD6B23D02B5EFE1A006C3256 /* ViewModel.swift in Sources */,
+				FD6E29F52B6191AF00A9BADD /* WardsModel.swift in Sources */,
+				FD6B23D02B5EFE1A006C3256 /* WardsListViewModel.swift in Sources */,
 				FD6B23A52B5EFA0B006C3256 /* ql_testApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,7 +451,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		FD6B23D62B5F1634006C3256 /* XCLocalSwiftPackageReference "PomoshAPI" */ = {
+		FD6E29F02B6180C200A9BADD /* XCLocalSwiftPackageReference "PomoshAPI" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = PomoshAPI;
 		};
@@ -479,7 +519,7 @@
 			package = FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = ApolloTestSupport;
 		};
-		FD6B23D72B5F1634006C3256 /* PomoshAPI */ = {
+		FD6E29F12B6180C200A9BADD /* PomoshAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PomoshAPI;
 		};
