@@ -14,16 +14,13 @@ struct WardsListView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             if !viewModel.wardsList.isEmpty {
-                LazyVStack(spacing : 20) {
+                LazyVStack {
                     ForEach(viewModel.wardsData) { data in
-                        VStack {
-                            Image(uiImage: data.image!)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 200, height: 200, alignment: .center)
-                            Text(data.name)
+                        NavigationLink {
+                            WadrDetail(id: data.id)
+                        } label: {
+                            WadrCell(image: data.image!, fullName: data.name)
                         }
-                        
                     }
                     if viewModel.wardsData.count < viewModel.wardsList.count {
                         Text("Загрузка списка...")
@@ -34,6 +31,7 @@ struct WardsListView: View {
                 }
             }
         }
+        .background(Color(.systemGroupedBackground))
         .onAppear {
             viewModel.fetchListWards()
         }

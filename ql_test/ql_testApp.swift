@@ -11,7 +11,9 @@ import SwiftUI
 struct ql_testApp: App {
     var body: some Scene {
         WindowGroup {
-            WardsListView()
+            NavigationStack {
+                WardsListView()
+            }
         }
     }
 }

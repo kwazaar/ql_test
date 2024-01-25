@@ -30,7 +30,6 @@ class WardsListViewModel: ObservableObject {
             case .success(let data):
                     self.wardsList = (data.data?.wards?.edges)!
                     self.wardsList.sort {$0.node.publicInformation.name.displayName < $1.node.publicInformation.name.displayName }
-                    print(self.wardsList)
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -44,8 +43,6 @@ class WardsListViewModel: ObservableObject {
             imageCachingService.loadImage(from: URL(string: node.publicInformation.photo.url)!) { image in
                 if let image = image {
                     self.wardsData.append(WardsModel(id: node.id, name: node.publicInformation.name.displayName, image: image))
-                } else {
-                    self.wardsData.append(WardsModel(id: node.id, name: node.publicInformation.name.displayName, image: nil))
                 }
             }
         }

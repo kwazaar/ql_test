@@ -11,22 +11,20 @@
 		FD6B23A72B5EFA0B006C3256 /* WardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B23A62B5EFA0B006C3256 /* WardsListView.swift */; };
 		FD6B23A92B5EFA0D006C3256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6B23A82B5EFA0D006C3256 /* Assets.xcassets */; };
 		FD6B23AC2B5EFA0D006C3256 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6B23AB2B5EFA0D006C3256 /* Preview Assets.xcassets */; };
-		FD6B23B42B5EFA42006C3256 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23B32B5EFA42006C3256 /* Apollo */; };
-		FD6B23B62B5EFA42006C3256 /* Apollo-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23B52B5EFA42006C3256 /* Apollo-Dynamic */; };
-		FD6B23B82B5EFA42006C3256 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23B72B5EFA42006C3256 /* ApolloAPI */; };
-		FD6B23BA2B5EFA42006C3256 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23B92B5EFA42006C3256 /* ApolloSQLite */; };
-		FD6B23BC2B5EFA42006C3256 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23BB2B5EFA42006C3256 /* ApolloTestSupport */; };
 		FD6B23BE2B5EFB94006C3256 /* GraphQL in Resources */ = {isa = PBXBuildFile; fileRef = FD6B23BD2B5EFB94006C3256 /* GraphQL */; };
-		FD6B23C32B5EFC72006C3256 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23C22B5EFC72006C3256 /* Apollo */; };
-		FD6B23C52B5EFC72006C3256 /* Apollo-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23C42B5EFC72006C3256 /* Apollo-Dynamic */; };
-		FD6B23C72B5EFC72006C3256 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23C62B5EFC72006C3256 /* ApolloAPI */; };
-		FD6B23C92B5EFC72006C3256 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23C82B5EFC72006C3256 /* ApolloSQLite */; };
-		FD6B23CB2B5EFC72006C3256 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = FD6B23CA2B5EFC72006C3256 /* ApolloTestSupport */; };
 		FD6B23CE2B5EFD40006C3256 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B23CD2B5EFD40006C3256 /* NetworkService.swift */; };
 		FD6B23D02B5EFE1A006C3256 /* WardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B23CF2B5EFE1A006C3256 /* WardsListViewModel.swift */; };
-		FD6E29F22B6180C200A9BADD /* PomoshAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FD6E29F12B6180C200A9BADD /* PomoshAPI */; };
 		FD6E29F52B6191AF00A9BADD /* WardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6E29F42B6191AF00A9BADD /* WardsModel.swift */; };
 		FD6E29F72B6193D300A9BADD /* ImageChachingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6E29F62B6193D300A9BADD /* ImageChachingService.swift */; };
+		FD6F15172B62CF4000816BEF /* WadrCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F15162B62CF4000816BEF /* WadrCell.swift */; };
+		FD6F15192B62D91900816BEF /* WadrDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F15182B62D91900816BEF /* WadrDetail.swift */; };
+		FD6F151B2B62D97400816BEF /* WardDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F151A2B62D97400816BEF /* WardDetailViewModel.swift */; };
+		FD6F15212B62F54900816BEF /* PomoshAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FD6F15202B62F54900816BEF /* PomoshAPI */; };
+		FD6F15242B63046800816BEF /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = FD6F15232B63046800816BEF /* Apollo */; };
+		FD6F15262B63046800816BEF /* Apollo-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FD6F15252B63046800816BEF /* Apollo-Dynamic */; };
+		FD6F15282B63046800816BEF /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = FD6F15272B63046800816BEF /* ApolloAPI */; };
+		FD6F152A2B63046800816BEF /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = FD6F15292B63046800816BEF /* ApolloSQLite */; };
+		FD6F152C2B63046800816BEF /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = FD6F152B2B63046800816BEF /* ApolloTestSupport */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +38,9 @@
 		FD6B23CF2B5EFE1A006C3256 /* WardsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardsListViewModel.swift; sourceTree = "<group>"; };
 		FD6E29F42B6191AF00A9BADD /* WardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardsModel.swift; sourceTree = "<group>"; };
 		FD6E29F62B6193D300A9BADD /* ImageChachingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChachingService.swift; sourceTree = "<group>"; };
+		FD6F15162B62CF4000816BEF /* WadrCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WadrCell.swift; sourceTree = "<group>"; };
+		FD6F15182B62D91900816BEF /* WadrDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WadrDetail.swift; sourceTree = "<group>"; };
+		FD6F151A2B62D97400816BEF /* WardDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WardDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +48,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD6B23C72B5EFC72006C3256 /* ApolloAPI in Frameworks */,
-				FD6B23B82B5EFA42006C3256 /* ApolloAPI in Frameworks */,
-				FD6B23BC2B5EFA42006C3256 /* ApolloTestSupport in Frameworks */,
-				FD6B23BA2B5EFA42006C3256 /* ApolloSQLite in Frameworks */,
-				FD6B23CB2B5EFC72006C3256 /* ApolloTestSupport in Frameworks */,
-				FD6B23B42B5EFA42006C3256 /* Apollo in Frameworks */,
-				FD6B23C32B5EFC72006C3256 /* Apollo in Frameworks */,
-				FD6B23C92B5EFC72006C3256 /* ApolloSQLite in Frameworks */,
-				FD6B23B62B5EFA42006C3256 /* Apollo-Dynamic in Frameworks */,
-				FD6B23C52B5EFC72006C3256 /* Apollo-Dynamic in Frameworks */,
-				FD6E29F22B6180C200A9BADD /* PomoshAPI in Frameworks */,
+				FD6F15212B62F54900816BEF /* PomoshAPI in Frameworks */,
+				FD6F15242B63046800816BEF /* Apollo in Frameworks */,
+				FD6F152A2B63046800816BEF /* ApolloSQLite in Frameworks */,
+				FD6F152C2B63046800816BEF /* ApolloTestSupport in Frameworks */,
+				FD6F15282B63046800816BEF /* ApolloAPI in Frameworks */,
+				FD6F15262B63046800816BEF /* Apollo-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				FD6B23A62B5EFA0B006C3256 /* WardsListView.swift */,
+				FD6F15162B62CF4000816BEF /* WadrCell.swift */,
+				FD6F15182B62D91900816BEF /* WadrDetail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				FD6B23CF2B5EFE1A006C3256 /* WardsListViewModel.swift */,
+				FD6F151A2B62D97400816BEF /* WardDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -161,17 +160,12 @@
 			);
 			name = ql_test;
 			packageProductDependencies = (
-				FD6B23B32B5EFA42006C3256 /* Apollo */,
-				FD6B23B52B5EFA42006C3256 /* Apollo-Dynamic */,
-				FD6B23B72B5EFA42006C3256 /* ApolloAPI */,
-				FD6B23B92B5EFA42006C3256 /* ApolloSQLite */,
-				FD6B23BB2B5EFA42006C3256 /* ApolloTestSupport */,
-				FD6B23C22B5EFC72006C3256 /* Apollo */,
-				FD6B23C42B5EFC72006C3256 /* Apollo-Dynamic */,
-				FD6B23C62B5EFC72006C3256 /* ApolloAPI */,
-				FD6B23C82B5EFC72006C3256 /* ApolloSQLite */,
-				FD6B23CA2B5EFC72006C3256 /* ApolloTestSupport */,
-				FD6E29F12B6180C200A9BADD /* PomoshAPI */,
+				FD6F15202B62F54900816BEF /* PomoshAPI */,
+				FD6F15232B63046800816BEF /* Apollo */,
+				FD6F15252B63046800816BEF /* Apollo-Dynamic */,
+				FD6F15272B63046800816BEF /* ApolloAPI */,
+				FD6F15292B63046800816BEF /* ApolloSQLite */,
+				FD6F152B2B63046800816BEF /* ApolloTestSupport */,
 			);
 			productName = ql_test;
 			productReference = FD6B23A12B5EFA0B006C3256 /* ql_test.app */;
@@ -202,8 +196,8 @@
 			);
 			mainGroup = FD6B23982B5EFA0B006C3256;
 			packageReferences = (
-				FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */,
-				FD6E29F02B6180C200A9BADD /* XCLocalSwiftPackageReference "PomoshAPI" */,
+				FD6F151F2B62F54900816BEF /* XCLocalSwiftPackageReference "PomoshAPI" */,
+				FD6F15222B63046800816BEF /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = FD6B23A22B5EFA0B006C3256 /* Products */;
 			projectDirPath = "";
@@ -233,10 +227,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6E29F72B6193D300A9BADD /* ImageChachingService.swift in Sources */,
+				FD6F151B2B62D97400816BEF /* WardDetailViewModel.swift in Sources */,
 				FD6B23A72B5EFA0B006C3256 /* WardsListView.swift in Sources */,
 				FD6B23CE2B5EFD40006C3256 /* NetworkService.swift in Sources */,
 				FD6E29F52B6191AF00A9BADD /* WardsModel.swift in Sources */,
+				FD6F15192B62D91900816BEF /* WadrDetail.swift in Sources */,
 				FD6B23D02B5EFE1A006C3256 /* WardsListViewModel.swift in Sources */,
+				FD6F15172B62CF4000816BEF /* WadrCell.swift in Sources */,
 				FD6B23A52B5EFA0B006C3256 /* ql_testApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,14 +448,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		FD6E29F02B6180C200A9BADD /* XCLocalSwiftPackageReference "PomoshAPI" */ = {
+		FD6F151F2B62F54900816BEF /* XCLocalSwiftPackageReference "PomoshAPI" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = PomoshAPI;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+		FD6F15222B63046800816BEF /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
 			requirement = {
@@ -469,59 +466,34 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FD6B23B32B5EFA42006C3256 /* Apollo */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = Apollo;
-		};
-		FD6B23B52B5EFA42006C3256 /* Apollo-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = "Apollo-Dynamic";
-		};
-		FD6B23B72B5EFA42006C3256 /* ApolloAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloAPI;
-		};
-		FD6B23B92B5EFA42006C3256 /* ApolloSQLite */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloSQLite;
-		};
-		FD6B23BB2B5EFA42006C3256 /* ApolloTestSupport */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloTestSupport;
-		};
-		FD6B23C22B5EFC72006C3256 /* Apollo */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = Apollo;
-		};
-		FD6B23C42B5EFC72006C3256 /* Apollo-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = "Apollo-Dynamic";
-		};
-		FD6B23C62B5EFC72006C3256 /* ApolloAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloAPI;
-		};
-		FD6B23C82B5EFC72006C3256 /* ApolloSQLite */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloSQLite;
-		};
-		FD6B23CA2B5EFC72006C3256 /* ApolloTestSupport */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FD6B23B22B5EFA42006C3256 /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloTestSupport;
-		};
-		FD6E29F12B6180C200A9BADD /* PomoshAPI */ = {
+		FD6F15202B62F54900816BEF /* PomoshAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PomoshAPI;
+		};
+		FD6F15232B63046800816BEF /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD6F15222B63046800816BEF /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		FD6F15252B63046800816BEF /* Apollo-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD6F15222B63046800816BEF /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = "Apollo-Dynamic";
+		};
+		FD6F15272B63046800816BEF /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD6F15222B63046800816BEF /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		FD6F15292B63046800816BEF /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD6F15222B63046800816BEF /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		FD6F152B2B63046800816BEF /* ApolloTestSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD6F15222B63046800816BEF /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloTestSupport;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
