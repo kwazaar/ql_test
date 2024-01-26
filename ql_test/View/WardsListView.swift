@@ -11,6 +11,7 @@ import PomoshAPI
 struct WardsListView: View {
     
     @ObservedObject var viewModel = WardsListViewModel()
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             if !viewModel.wardsList.isEmpty {
@@ -19,7 +20,7 @@ struct WardsListView: View {
                         NavigationLink {
                             WadrDetail(id: data.id)
                         } label: {
-                            WadrCell(image: data.image!, fullName: data.name)
+                            WadrCell(image: data.image ?? UIImage(), fullName: data.name)
                         }
                     }
                     if viewModel.wardsData.count < viewModel.wardsList.count {

@@ -7,17 +7,16 @@
 
 import Foundation
 import SwiftUI
-import PomoshAPI
 
 
 struct WardsModel: Identifiable {
     
-
     var id: String = ""
     var name: String = ""
     var image: UIImage?
     var city: String = ""
     var story: String = ""
+    
 }
 
 

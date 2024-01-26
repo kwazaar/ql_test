@@ -9,15 +9,19 @@ import Foundation
 import SwiftUI
 
 class ImageCachingService: ObservableObject {
-    @Published var image: UIImage?
+    
       
-    func loadImage(from url: URL, completion: @escaping (UIImage?) -> Void) {
+    func loadImage(from url: URL, compressionQuality: CGFloat , completion: @escaping (UIImage?) -> Void) {
         let request = URLRequest(url: url)
         
         if let cachedResponse = URLCache.shared.cachedResponse(for: request) {
-            self.image = UIImage(data: cachedResponse.data)
-            completion(self.image)
-            return
+            if let compressedData = UIImage(data: cachedResponse.data)?.jpegData(compressionQuality: (compressionQuality)) {
+                print(cachedResponse.data)
+                print("Cache: \(compressedData)")
+                let image = UIImage(data: compressedData)
+                completion(image)
+                return
+            }
         }
         
         URLSession.shared.dataTask(with: request) { data, response, error in
@@ -28,11 +32,12 @@ class ImageCachingService: ObservableObject {
             
             let cacheData = CachedURLResponse(response: response!, data: data)
             URLCache.shared.storeCachedResponse(cacheData, for: request)
-            
-            DispatchQueue.main.async {
-                self.image = UIImage(data: data)
-                completion(self.image)
-            }
+                if let compressedData = UIImage(data: data)?.jpegData(compressionQuality: compressionQuality) {
+                    print(data)
+                    print("Download: \(compressedData)")
+                        let image = UIImage(data: compressedData)
+                        completion(image)
+                    }
         }.resume()
     }
 }
