@@ -16,7 +16,7 @@ class WardsListViewModel: ObservableObject {
     @Published var currentPage = 0
     private lazy var imageCachingService = ImageCachingService()
     private var firstIndex = 0
-    private var pageSize = 20
+    private var pageSize = 10
     private var image: UIImage = UIImage()
     
     var currentList: Range<Int> {
@@ -45,22 +45,23 @@ class WardsListViewModel: ObservableObject {
         let dispatchGroup = DispatchGroup()
         
         currentPage += 1
+//        print("Загрузка \(pageSize) подопечных \(currentPage)  страницы")
         DispatchQueue.global().async {
-            let mappedModels = self.currentList.map { index in
+            for index in self.currentList {
+                var fetchImage = UIImage()
                 let node = self.wardsList[index].node
                 let imageURL = URL(string: node.publicInformation.photo.url)!
                 
                 dispatchGroup.enter()
                 
                 self.imageCachingService.loadImage(from: imageURL, compressionQuality: 0.1) { image in
-                    self.image = image!
+                    fetchImage = image!
                     dispatchGroup.leave()
                 }
                 dispatchGroup.wait()
-                return WardsModel(id: node.id, name: node.publicInformation.name.displayName, image: self.image)
-            }
-            DispatchQueue.main.async {
-                self.wardsData.append(contentsOf: mappedModels)
+                DispatchQueue.main.async {
+                    self.wardsData.append(WardsModel(id: node.id, name: node.publicInformation.name.displayName, image: fetchImage))
+                }
             }
         }
     }

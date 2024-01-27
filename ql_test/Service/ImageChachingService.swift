@@ -10,14 +10,13 @@ import SwiftUI
 
 class ImageCachingService: ObservableObject {
     
-      
+    
     func loadImage(from url: URL, compressionQuality: CGFloat , completion: @escaping (UIImage?) -> Void) {
         let request = URLRequest(url: url)
         
         if let cachedResponse = URLCache.shared.cachedResponse(for: request) {
             if let compressedData = UIImage(data: cachedResponse.data)?.jpegData(compressionQuality: (compressionQuality)) {
-                print(cachedResponse.data)
-                print("Cache: \(compressedData)")
+//                print("Cache: \(compressedData)")
                 let image = UIImage(data: compressedData)
                 completion(image)
                 return
@@ -32,12 +31,11 @@ class ImageCachingService: ObservableObject {
             
             let cacheData = CachedURLResponse(response: response!, data: data)
             URLCache.shared.storeCachedResponse(cacheData, for: request)
-                if let compressedData = UIImage(data: data)?.jpegData(compressionQuality: compressionQuality) {
-                    print(data)
-                    print("Download: \(compressedData)")
-                        let image = UIImage(data: compressedData)
-                        completion(image)
-                    }
+            if let compressedData = UIImage(data: data)?.jpegData(compressionQuality: compressionQuality) {
+//                  print("Download: \(compressedData)")
+                let image = UIImage(data: compressedData)
+                completion(image)
+            }
         }.resume()
     }
 }

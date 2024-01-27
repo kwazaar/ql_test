@@ -23,14 +23,16 @@ class WardDetailViewModel: ObservableObject {
             case .success(let data):
                 
                 if let ward = data.data?.wardById {
-                    self.modelWard.name = ward.publicInformation.name.fullName
-                    self.modelWard.city = ward.publicInformation.city
-                    self.modelWard.story = ward.publicInformation.story
-                    
                     if let url = URL(string: ward.publicInformation.photo.url) {
                         self.imageCachingService.loadImage(from: url, compressionQuality: 0.5) { image in
                             if let image = image {
-                                self.modelWard.image = image
+                                DispatchQueue.main.async {
+                                    self.modelWard.name = ward.publicInformation.name.fullName
+                                    self.modelWard.city = ward.publicInformation.city
+                                    self.modelWard.story = ward.publicInformation.story
+                                    self.modelWard.image = image
+                                }
+                                
                             }
                         }
                     }

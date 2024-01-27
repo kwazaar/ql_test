@@ -47,25 +47,21 @@ struct WadrDetail: View {
             .frame(width: width, alignment: .leading)
         }
         .navigationBarItems(
-                    leading:
-                        Button(action: {
-                            self.presentationMode.wrappedValue.dismiss()
-                        }) {
-                            HStack {
-                                Image(systemName: "chevron.left")
-                                    .foregroundColor(.black)
-                                Text("Назад")
-                                    .foregroundColor(.black)
-                            }
-                        }
-                )
+            leading:
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    HStack {
+                        Image(systemName: "chevron.left")
+                            .foregroundColor(.black)
+                        Text("Назад")
+                            .foregroundColor(.black)
+                    }
+                }
+        )
         .onAppear {
             viewModel.fetchModel(id: id)
         }
         .navigationBarBackButtonHidden()
     }
 }
-
-//#Preview {
-//    WadrDelail(wardModel: WardsModel(idData: "5fba91236a59c85282abd21d", name: "asdasdasdasd", image: UIImage(named: "Image")!, city: "asdasdasd", story: "sadsjhfbsdjhfbsjdfb sdbf kbsdf bsdofbhosdfb sbdfob osdbofbsa bdfo basdf", date: "33-22-11"))
-//}

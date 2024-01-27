@@ -21,7 +21,9 @@ struct WardsListView: View {
                             WadrDetail(id: data.id)
                         } label: {
                             WadrCell(image: data.image ?? UIImage(), fullName: data.name)
+                            
                         }
+                        .buttonStyle(.plain)
                     }
                     if viewModel.wardsData.count < viewModel.wardsList.count {
                         Text("Загрузка списка...")

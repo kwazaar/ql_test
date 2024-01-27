@@ -31,17 +31,16 @@ struct WadrCell: View {
                 .scaledToFill()
                 .frame(width: width, height: height)
                 .clipShape(.rect(cornerRadius: 20))
-                    
-                    
-                    
+            
+            
+            
             Text(fullName)
                 .font(.system(.title))
-                .foregroundStyle(.black)
-                    
-            }
-            .padding()
-            .background(Color.white)
-            .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+            
+        }
+        .padding()
+        .background(Color.white)
+        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
 }
 
